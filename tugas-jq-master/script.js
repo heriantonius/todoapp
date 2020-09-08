@@ -14,7 +14,6 @@ if (todo.length) {
 
 function show() {
   list.html("");
-  let content = "";
   for (let i = 0; i < todo.length; i++) {
     todo[i].date = new Date(todo[i].date);
     content += `<li>${todo[i].text} | ${todo[i].date}${todo[i].completed}</li>`;
